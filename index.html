@@ -19,7 +19,7 @@
   <body>
     <div class="container">
       <div class="container-form">
-        <div class="container-signin">
+        <div class="container-signin-singnup">
           <form action="" class="form-signin">
             <h2 class="title">Sign in</h2>
             <div class="input-field">
@@ -43,18 +43,22 @@
               ></a>
             </div>
           </form>
-          <form action="" class="form-signin">
-            <h2 class="title">Sign in</h2>
+          <form action="" class="form-signup">
+            <h2 class="title">Sign up</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
               <input type="text" placeholder="Username" />
             </div>
             <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="text" placeholder="Email" />
+            </div>
+            <div class="input-field">
               <i class="fas fa-lock"></i>
               <input type="password" placeholder="Password" />
             </div>
-            <input type="submit" value="Login" class="btn" />
-            <p class="text-social">Or Sing in with social plataforms</p>
+            <input type="submit" value="Sing up" class="btn" />
+            <p class="text-social">Or Sing up with social plataforms</p>
             <div class="social-media">
               <a href="#" class="social-icon"
                 ><i class="fab fa-facebook-f"></i
@@ -68,12 +72,37 @@
           </form>
         </div>
       </div>
-      <div class="container-panels"></div>
+      <div class="container-panels">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here ?</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam amet
+              deserunt tempora.
+            </p>
+            <button class="btn transparent" id="sign-up-btn">Sign up</button>
+          </div>
+          <img src="./img/bitcoin.svg" class="image" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>One of us ?</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam amet
+              deserunt tempora.
+            </p>
+            <button class="btn transparent" id="sign-up-btn">Sign in</button>
+          </div>
+          <img src="./img/money.svg" class="image" />
+        </div>
+      </div>
     </div>
 
     <script
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./app.js"></script>
   </body>
 </html>
